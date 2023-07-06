@@ -8,13 +8,15 @@
     "type": "module",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
-  },
+    "build": "cd client && npm run build",
+    "test": "jest"
+    },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.0"
+  "concurrently": "^8.2.0"
   },
   "dependencies": {
     "@babel/cli": "^7.6.4",
